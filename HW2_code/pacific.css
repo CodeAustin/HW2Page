@@ -1,0 +1,123 @@
+/* 
+NOTE: A large majority of things worked on in this CSS file are done via 
+a large amount of trial and error. Below will be references to code sources.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+    background-image: url("ptrbackground.jpg");
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    min-width: 600px;
+	margin: 10px auto 10px auto; 
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+
+}
+h2 {
+	color: #65c9fb;
+}
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#wrapper {
+    margin: 10px auto 10px auto; 
+    padding: 0 5px 0 5px;
+	width: 80%;
+	min-width: 600px;
+    /* 
+    Using a grid was AMAZING and below are all the sources:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+    https://www.youtube.com/watch?v=EiNiSFIPIQE
+    */
+    display: grid;
+    grid-template-areas: 
+            "a a a"
+            "b c c"
+            "b d d";
+    grid-template-columns: 160px auto; 
+    grid-template-rows: auto auto; 
+    width: 100%; 
+}
+
+/* Header section */
+header {
+    grid-area: a; 
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000033;
+    color: white;
+}
+
+nav {
+    grid-area: b; 
+    background-color: #65c9fb;
+    min-width: 100px;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+nav a {
+    font-weight: bold;
+    color: #000033;
+    text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#contact {
+	font-size: 90%;
+    display: block;
+}
+
+/* Content section */
+#content {
+    grid-area: c; 
+padding: 0px 10px 10px 10px;    background-color: white;
+    display: inline-block;
+}
+
+#content img {
+    margin: 0px 20px 0px 20px;
+    float: left; 
+    padding: 0px 10px 10px 10px;   
+     height: auto; 
+}
+
+#content li {
+    list-style-image: url("marker.gif");
+}
+
+p {
+    inline-size: auto;
+}
+
+.resort {
+	font-weight: bold;
+    color: #4eabd9;
+}
+
+footer {
+    grid-area: d;
+    font-weight: initial;
+    background-color: white;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 0px 10px 10px 10px;
+	font-family: Georgia, "Times New Roman", serif;
+}

@@ -1,0 +1,117 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+    background-image: url("ptrbackground.jpg");
+	background-color: #00569f;
+	color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+
+}
+h2 {
+	color: #4eabd9;
+}
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#wrapper {
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    min-width: 600px;
+    margin: auto auto auto auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header section */
+header {
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000033;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    background-color: aquamarine;
+    padding: 10px 10px;
+    height: auto;
+    float:left;
+}
+nav ul {
+    list-style-type: none;
+    width: 160px;
+    text-align: left;
+}
+
+nav a {
+    color: #000033;
+    text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+/* Content section */
+
+#content {
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Adding styling for images */
+#content img {
+    float: left; /* Makes the image float to the left */
+    padding: 10px;
+    margin-right: 10px; /* Adds some space between the image and the text */
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Keeps the image aspect ratio */
+}
+
+#content li {
+    margin-bottom: 0px;
+    margin-right:  10px;
+}
+
+p {
+    inline-size: auto;
+}
+
+/* Footer section */
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+/* Resort Span */
+.resort {
+    color: #4eabd9;
+}
+
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
